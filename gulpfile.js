@@ -58,9 +58,7 @@ gulp.task('asset', function(){
 gulp.task('jade', function(){
   return gulp.src([config.jade.path + '/**/*' + config.jade.extension,
                    '!' + config.jade.path + '**/_*' + config.jade.extension])
-             .pipe(jade({
-               locals: JSON.parse(fs.readFileSync(config.data.path))
-             }))
+             .pipe(jade())
              .pipe(gulp.dest(config.build.path));
 });
 

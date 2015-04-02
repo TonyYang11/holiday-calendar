@@ -1,5 +1,5 @@
 {
-  "name": "febp",
+  "name": "holiday-calendar",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -22,12 +22,7 @@
   },
   "browserify": {
     "transform": [
-      [
-        "reactify",
-        {
-          "es6": true
-        }
-      ]
+      "reactify"
     ]
   }
 }
